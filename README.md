@@ -41,11 +41,6 @@ At the moment there are multiple *failure rates* that you can send to `addCaos` 
 
 `shouldFail` is called on every request with the `request` object, it is used to decide if that specific request should proceed of fail.
 
-## options.shouldFail(callback: Function): Boolean
-
-`shouldFail` is called on every request with `Pretender` `request` object.
-It is used to decide if that specific request should proceed of fail.
-
 ## options.getBreakingCase(callback: Function): String
 
 `getBreakingCase` is called on every request with `Pretender` `request` object.
