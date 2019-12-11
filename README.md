@@ -21,6 +21,8 @@ const ServerWithCaos = addCaos(Server, { level: 'high' });
 new ServerWithCaos({
   // mirage config
 });
+
+// Your Mirage will now randomly fail
 ```
 
 ## API
@@ -66,3 +68,8 @@ There are multiple error cases available at the moment:
 - At the moment all the mirage logs are supressed (as the pretender instance is being created by `caos`)
 - API is still messy and not very coherent
 - Tests are missing
+
+# Raw ideas
+
+- Integrate with Mirage Factories/db in order to mess with the payload
+- Make HTTP requests `abort` before they reach the server (offline behaviour)
