@@ -1,5 +1,8 @@
 import Pretender from "pretender";
 import withCaos from './withCaos';
+import caosCasesWithHandlers from './caosCases';
+
+export const caosCases = Object.keys(caosCasesWithHandlers);
 
 export const addCaos = (MirageServer, caosOptions) => {
   return function(options = {}) {
