@@ -1,6 +1,6 @@
 {
   "name": "miragejs-caos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A package that generates caos on a MirageJS Server. An initial approach to SRE on the frontend",
   "main": "index.js",
   "scripts": {
