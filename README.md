@@ -2,7 +2,7 @@
 
 Chaos Engineering - Chaos engineering is the discipline of experimenting on a software system in production in order to build confidence in the system's capability to withstand turbulent and unexpected conditions.
 
-[Brian Holt's talk about it](https://www.youtube.com/watch?v=A4_rRj-4Mv0) is great, Chaos Imp is not finished (and I didn't manage to find a version of it only)
+[Brian Holt's talk about it](https://www.youtube.com/watch?v=A4_rRj-4Mv0) is great, Chaos Imp is not finished (and I didn't manage to find a version of it online).
 
 The main purpose of `caos` is to **build more reliable UIs**. It does it by adding some _caos to the networking layer_ by adding random delays and having endpoints failing with multiple error codes.
 
@@ -43,11 +43,6 @@ At the moment there are multiple _failure rates_ that you can send to `addCaos` 
 ## options.shouldFail(callback: Function): Boolean
 
 `shouldFail` is called on every request with the `request` object, it is used to decide if that specific request should proceed of fail.
-
-## options.shouldFail(callback: Function): Boolean
-
-`shouldFail` is called on every request with `Pretender` `request` object.
-It is used to decide if that specific request should proceed of fail.
 
 ## options.getBreakingCase(callback: Function): String
 
