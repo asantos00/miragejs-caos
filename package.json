@@ -1,0 +1,27 @@
+{
+  "name": "miragejs-caos",
+  "version": "0.0.1",
+  "description": "A package that generates caos on a MirageJS Server. An initial approach to SRE on the frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asantos00/miragejs-caos.git"
+  },
+  "keywords": [
+    "miragejs",
+    "mirage",
+    "chaos",
+    "engineering",
+    "sre",
+    "frontend"
+  ],
+  "author": "asantos00",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asantos00/miragejs-caos/issues"
+  },
+  "homepage": "https://github.com/asantos00/miragejs-caos#readme"
+}
