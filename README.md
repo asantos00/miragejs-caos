@@ -4,19 +4,22 @@ Chaos Engineering - Chaos engineering is the discipline of experimenting on a so
 
 [Brian Holt's talk about it](https://www.youtube.com/watch?v=A4_rRj-4Mv0) is great, Chaos Imp is not finished (and I didn't manage to find a version of it only)
 
-The main purpose of `caos` is to **build more reliable UIs**. It does it by adding some *caos to the networking layer* by adding random delays and having endpoints failing with multiple error codes.
+The main purpose of `caos` is to **build more reliable UIs**. It does it by adding some _caos to the networking layer_ by adding random delays and having endpoints failing with multiple error codes.
 
 It works on apps using `miragejs` (as it wraps the mirage server). Being more specific it actually just acts on the `pretender` instance for now, but connecting it with mirage might be useful in the future to enlarge the error variety.
 
-**Note:** This is still a proof of concept, is not even published to npm, stuff like package name, errors, API is still to be decided even thought at the moment it works (with very few errors).
+## Note
+
+This is still a proof of concept, stuff like errors, API is super unstable and still to be decided. Tests are also missing.
+However, if you find it useful, more than happy to accept all types of contributions.
 
 ## Usage
 
 ```js
-import { Server } from 'miragejs';
-import { addCaos } from 'miragejs-caos'; // package name not registered
+import { Server } from "miragejs";
+import { addCaos } from "miragejs-caos"; // package name not registered
 
-const ServerWithCaos = addCaos(Server, { level: 'high' });
+const ServerWithCaos = addCaos(Server, { level: "high" });
 
 new ServerWithCaos({
   // mirage config
@@ -31,7 +34,7 @@ new ServerWithCaos({
 
 ## options.level
 
-At the moment there are multiple *failure rates* that you can send to `addCaos` as a `level`.
+At the moment there are multiple _failure rates_ that you can send to `addCaos` as a `level`.
 
 - High - fails 80% of the time (error is random) - `high`
 - Medium - fails 40% of the time (error is random) - `medium`
@@ -52,7 +55,7 @@ It is used to decide if that specific request should proceed of fail.
 The code of the error should be returned. Error codes are exported as `caosCases`.
 
 ```js
-import { caosCases } from 'miragejs-caos'
+import { caosCases } from "miragejs-caos";
 ```
 
 There are multiple error cases available at the moment:
