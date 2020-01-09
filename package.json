@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/asantos00/miragejs-caos/issues"
   },
-  "homepage": "https://github.com/asantos00/miragejs-caos#readme"
+  "homepage": "https://github.com/asantos00/miragejs-caos#readme",
+  "dependencies": {
+    "lodash.range": "^3.2.0"
+  }
 }

@@ -1,7 +1,7 @@
 import caosCases from "./caosCases";
 
 const FAILURE_LEVELS = {
-  high: 0.8,
+  high: 0.9,
   medium: 0.4,
   low: 0.1
 };
