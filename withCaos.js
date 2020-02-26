@@ -7,7 +7,7 @@ const FAILURE_LEVELS = {
 };
 
 const randomFailureRate = (_, level) =>
-  Math.random() >= FAILURE_LEVELS[level || "medium"];
+  Math.random() <= FAILURE_LEVELS[level || "medium"];
 
 const randomBreakingCase = () => {
   const possibleCases = Object.keys(caosCases);
